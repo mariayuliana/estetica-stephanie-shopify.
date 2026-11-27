@@ -1,0 +1,17 @@
+<section class="hero" id="inicio" style="--hero-overlay: {{ section.settings.overlay | divided_by: 100.0 }};">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | image_url: width: 2200 | image_tag: class: 'hero-image', loading: 'eager', alt: section.settings.image_alt }}
+  {% else %}
+    <img class="hero-image" src="{{ 'hero-reference.jpg' | asset_url }}" alt="Atención estética personalizada" loading="eager">
+  {% endif %}
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+    <h1>{{ section.settings.heading }}</h1>
+    <p class="hero-subtitle">{{ section.settings.subtitle }}</p>
+    <a class="button button-light" href="#tratamientos">{{ section.settings.button_label }} <span>↓</span></a>
+  </div>
+</section>
+{% schema %}
+{"name":"Portada principal","settings":[{"type":"image_picker","id":"image","label":"Foto principal"},{"type":"text","id":"image_alt","label":"Descripción de la foto","default":"Profesional realizando un tratamiento estético"},{"type":"range","id":"overlay","label":"Oscurecer imagen","min":0,"max":70,"step":5,"default":15},{"type":"text","id":"eyebrow","label":"Texto superior","default":"STEPHANIE MARTÍNEZ"},{"type":"text","id":"heading","label":"Título","default":"Estética Corporal"},{"type":"textarea","id":"subtitle","label":"Descripción","default":"Estética avanzada, cuidado personalizado y bienestar."},{"type":"text","id":"button_label","label":"Texto del botón","default":"Conocé nuestros tratamientos"}]}
+{% endschema %}

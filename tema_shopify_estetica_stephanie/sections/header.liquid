@@ -1,0 +1,11 @@
+<header class="site-header">
+  <a class="brand" href="{{ routes.root_url }}"><span>{{ section.settings.brand_name }}</span><small>{{ section.settings.brand_subtitle }}</small></a>
+  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#tratamientos">Tratamientos</a><a href="#contacto">Contacto</a>
+    <a class="nav-cta" href="#tratamientos">{{ section.settings.cta_text }}</a>
+  </nav>
+</header>
+{% schema %}
+{"name":"Encabezado","settings":[{"type":"text","id":"brand_name","label":"Nombre de marca","default":"Estética Corporal"},{"type":"text","id":"brand_subtitle","label":"Subtítulo","default":"STEPHANIE MARTÍNEZ"},{"type":"text","id":"cta_text","label":"Botón","default":"Agendar turno"}]}
+{% endschema %}

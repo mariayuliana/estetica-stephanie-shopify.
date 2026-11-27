@@ -1,0 +1,18 @@
+<section class="about section-wrap" id="sobre-mi">
+  <div class="about-photo">
+    {% if section.settings.photo != blank %}{{ section.settings.photo | image_url: width: 900 | image_tag: loading: 'lazy', alt: section.settings.name }}{% else %}<img src="{{ 'stephanie-portrait.jpg' | asset_url }}" alt="{{ section.settings.name }}" loading="lazy">{% endif %}
+  </div>
+  <div class="about-copy">
+    <p class="eyebrow">{{ section.settings.kicker }}</p><h2>{{ section.settings.heading }}</h2>
+    <h3>{{ section.settings.name }}</h3><p class="role">{{ section.settings.role }}</p>
+    <div class="rte">{{ section.settings.description }}</div>
+  </div>
+</section>
+<section class="features section-wrap">
+  {% for block in section.blocks %}
+    <div class="feature" {{ block.shopify_attributes }}><span class="feature-symbol">{{ block.settings.symbol }}</span><h3>{{ block.settings.title }}</h3><p>{{ block.settings.text }}</p></div>
+  {% endfor %}
+</section>
+{% schema %}
+{"name":"Sobre mí y trayectoria","settings":[{"type":"image_picker","id":"photo","label":"Foto de Stephanie"},{"type":"text","id":"kicker","label":"Texto pequeño","default":"CONOCÉ MI HISTORIA"},{"type":"text","id":"heading","label":"Título","default":"Sobre mí"},{"type":"text","id":"name","label":"Nombre","default":"Stephanie Martínez"},{"type":"text","id":"role","label":"Profesión","default":"Cosmetóloga, esteticista y masoterapeuta."},{"type":"richtext","id":"description","label":"Presentación","default":"<p>Desde 2018 me dedico al mundo de la estética, apostando a la formación continua, la innovación y el crecimiento profesional.</p><p>Mi filosofía de trabajo se basa en combinar conocimiento, tecnología y atención personalizada, respetando las necesidades y objetivos de cada persona.</p><p>Creo en una estética consciente, responsable y comprometida, que busca potenciar el bienestar y la confianza de quienes eligen atenderse conmigo.</p>"}],"blocks":[{"type":"feature","name":"Dato destacado","settings":[{"type":"text","id":"symbol","label":"Símbolo","default":"✧"},{"type":"text","id":"title","label":"Título","default":"+8 años"},{"type":"text","id":"text","label":"Descripción","default":"de trayectoria profesional"}]}],"presets":[{"name":"Sobre mí y trayectoria","blocks":[{"type":"feature","settings":{"symbol":"♡","title":"+8 años","text":"de trayectoria profesional"}},{"type":"feature","settings":{"symbol":"⌑","title":"Formación continua","text":"Capacitación profesional"}},{"type":"feature","settings":{"symbol":"♧","title":"Atención personalizada","text":"Compromiso con cada persona"}}]}]}
+{% endschema %}

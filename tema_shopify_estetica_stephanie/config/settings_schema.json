@@ -1,0 +1,56 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Estética Corporal – Stephanie Martínez",
+    "theme_author": "Yuli Digital Media",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://help.shopify.com/es/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com/es"
+  },
+  {
+    "name": "Identidad visual",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Fondo",
+        "default": "#fbf4f3"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Texto",
+        "default": "#302326"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Rosa principal",
+        "default": "#b77e7d"
+      },
+      {
+        "type": "color",
+        "id": "color_deep",
+        "label": "Bordó",
+        "default": "#824e50"
+      }
+    ]
+  },
+  {
+    "name": "Contacto WhatsApp",
+    "settings": [
+      {
+        "type": "text",
+        "id": "whatsapp_number",
+        "label": "Número con código de país, sin espacios",
+        "default": "59899283222"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_label",
+        "label": "Texto del botón",
+        "default": "099 283 222"
+      }
+    ]
+  }
+]

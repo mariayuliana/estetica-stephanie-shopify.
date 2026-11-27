@@ -1,0 +1,14 @@
+TEMA SHOPIFY – ESTÉTICA CORPORAL STEPHANIE MARTÍNEZ
+
+Instalación:
+1. En Shopify: Tienda online > Temas.
+2. En Biblioteca de temas, elegir Agregar tema > Subir archivo ZIP.
+3. Subir este archivo ZIP.
+4. Antes de publicar, abrir Personalizar y revisar las secciones.
+5. En Portada principal, reemplazar la imagen de muestra por la foto original de Stephanie atendiendo a una clienta.
+6. En Sobre mí, reemplazar la foto de muestra por el retrato original.
+7. En Configuración del tema > Contacto WhatsApp, confirmar el número con código de país (59899283222 para 099 283 222).
+8. Guardar y previsualizar en móvil y escritorio.
+
+El tema está pensado como una web de presentación de servicios, no como catálogo de productos. Los textos, fotos, colores y servicios se editan desde el personalizador de Shopify.
+Nota: las fotos incluidas son recortes de la imagen de referencia para que el tema tenga contenido inicial; reemplazalas por los archivos originales de la clienta antes de publicar.

@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {}
+    },
+    "about": {
+      "type": "about",
+      "blocks": {
+        "feature1": {
+          "type": "feature",
+          "settings": {
+            "symbol": "♡",
+            "title": "+8 años",
+            "text": "de trayectoria profesional"
+          }
+        },
+        "feature2": {
+          "type": "feature",
+          "settings": {
+            "symbol": "⌑",
+            "title": "Formación continua",
+            "text": "Capacitación profesional"
+          }
+        },
+        "feature3": {
+          "type": "feature",
+          "settings": {
+            "symbol": "♧",
+            "title": "Atención personalizada",
+            "text": "Compromiso con cada persona"
+          }
+        }
+      },
+      "block_order": [
+        "feature1",
+        "feature2",
+        "feature3"
+      ],
+      "settings": {}
+    },
+    "services": {
+      "type": "services",
+      "blocks": {
+        "service1": {
+          "type": "service",
+          "settings": {
+            "symbol": "♧",
+            "title": "Tratamientos corporales",
+            "description": "Reducción, tonificación y modelado."
+          }
+        },
+        "service2": {
+          "type": "service",
+          "settings": {
+            "symbol": "✧",
+            "title": "Tratamientos faciales",
+            "description": "Limpieza, hidratación y rejuvenecimiento."
+          }
+        },
+        "service3": {
+          "type": "service",
+          "settings": {
+            "symbol": "◉",
+            "title": "Masoterapia",
+            "description": "Relajación, descontracturante y bienestar."
+          }
+        },
+        "service4": {
+          "type": "service",
+          "settings": {
+            "symbol": "⌁",
+            "title": "Cejas",
+            "description": "Diseño y depilación con hilo."
+          }
+        }
+      },
+      "block_order": [
+        "service1",
+        "service2",
+        "service3",
+        "service4"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "about",
+    "services"
+  ]
+}

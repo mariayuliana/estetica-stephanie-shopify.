@@ -1,0 +1,8 @@
+<footer class="site-footer" id="contacto">
+  <div><p class="eyebrow">{{ section.settings.kicker }}</p><h2>{{ section.settings.heading }}</h2><p>{{ section.settings.text }}</p></div>
+  <a class="button" href="https://wa.me/{{ settings.whatsapp_number | remove: ' ' | remove: '+' | remove: '-' }}" target="_blank" rel="noopener">{{ section.settings.button_label }}</a>
+  <small>© {{ 'now' | date: '%Y' }} {{ shop.name }} · Todos los derechos reservados</small>
+</footer>
+{% schema %}
+{"name":"Contacto y pie de página","settings":[{"type":"text","id":"kicker","label":"Texto pequeño","default":"ESTOY PARA AYUDARTE"},{"type":"text","id":"heading","label":"Título","default":"Tu momento de bienestar empieza acá"},{"type":"textarea","id":"text","label":"Texto","default":"Escribime para consultar por tratamientos, disponibilidad y turnos."},{"type":"text","id":"button_label","label":"Botón","default":"Consultar por WhatsApp"}]}
+{% endschema %}
